@@ -33,29 +33,56 @@ const HeaderBarista = () => {
     <div className="collapse navbar-collapse" id="navbarNav">
 
       <ul className="navbar-nav ms-lg-auto">
-
         <li className="nav-item">
-          <Link to="/">Home</Link> 
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "active-link" : "inactive-link"
+              }
+            >
+              Home
+            </NavLink>
           
         </li>
         <li className="nav-item">
-          <Link to="/about">About</Link> 
+          <NavLink to="/about"
+            className={({ isActive }) =>
+                isActive ? "active-link" : "inactive-link"
+              }>
+            About
+          </NavLink> 
         </li>
 
         <li className="nav-item">
-          <Link to="/menu">Our Menu</Link>
+          <NavLink to="/menu"
+            className={({ isActive }) =>
+                isActive ? "active-link" : "inactive-link"
+              }
+          >Our Menu</NavLink>
         </li>
 
         <li className="nav-item">
-          <Link to="/reviews">Reviews</Link>
+          <NavLink to="/reviews"
+          className={({ isActive }) =>
+                isActive ? "active-link" : "inactive-link"
+              }
+              >Reviews</NavLink>
         </li>
 
         <li className="nav-item">
-          <Link to="/contact">Contact</Link>
+          <NavLink to="/contact"
+          className={({ isActive }) =>
+                isActive ? "active-link" : "inactive-link"
+              }
+          >Contact</NavLink>
         </li>
 
         <li className="nav-item">
-          <Link to="/reservation">Reservation</Link>
+          <NavLink to="/reservation"
+          className={({ isActive }) =>
+                isActive ? "active-link" : "inactive-link"
+              }
+          >Reservation</NavLink>
         </li>
 
       </ul>

@@ -321,6 +321,9 @@ strong {
 /*---------------------------------------
   NAVIGATION BAR & OFFCANVAS              
 -----------------------------------------*/
+a.active-link{
+  background: wheat;
+}
 .navbar-nav .nav-item {
   margin-right: 1.5rem;
 }
